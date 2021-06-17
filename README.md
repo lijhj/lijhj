@@ -1,6 +1,6 @@
 ### Hi there 👋
 - I'm Jack
-- Email: ljh.cpp@qq.com
+- Email: ljh_app@qq.com
 - I live in Shenzhen China
 - My programming skills: C, C++, Linux, Makefile, tkinter, SwiftUI
 
