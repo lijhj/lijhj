@@ -2,7 +2,7 @@
 - I'm Jack
 - Email: ljh_app@qq.com
 - I live in Shenzhen China
-- My programming skills: C, C++, Linux, Makefile, Swift
+- My programming skills: C, C++, Linux, Makefile, Autotools
 
 ### Minimal Makefile 👋
 _Automatic Makefile for C and C++_
