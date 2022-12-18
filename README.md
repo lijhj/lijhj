@@ -3,9 +3,9 @@ _Automatic Makefile for C and C++_
 ```
 # build shared library with -fPIC, -shared
 CFLAGS   = -g # -O3 -fPIC # CXXFLAGS for .cpp
-LDFLAGS  = # -L../foo -Wl,-rpath,/path/foo # -shared
-LDLIBS   = # -lfoo
-CPPFLAGS = -MMD -MP # -I../foo
+LDFLAGS  = # -L../bar -Wl,-rpath,/foo/bar # -shared
+LDLIBS   = # -lbar
+CPPFLAGS = -MMD -MP # -I../bar
 #CC      = $(CXX) # link with CXX for .cpp
 
 # target name is basename of one of the source files
