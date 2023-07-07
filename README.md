@@ -1,5 +1,5 @@
-### Minimal Makefile ⚡
-_Automatic Makefile for C and C++_
+### Minimal Makefile
+
 ```
 # build shared library with -fPIC, -shared
 CFLAGS   = -g # -O3 -fPIC # CXXFLAGS for .cpp
