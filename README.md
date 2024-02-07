@@ -1,5 +1,3 @@
-### Minimal Makefile
-
 ```
 # build dynamic library with -fPIC -shared
 CFLAGS   = -g # -O3 -fPIC # CXXFLAGS for .cpp
