@@ -2,7 +2,7 @@
 # build dynamic library with -fPIC -shared
 CFLAGS   = -g # -O3 -fPIC # CXXFLAGS for .cpp
 CPPFLAGS = -MMD -MP # -I../foo -DNDEBUG
-LDFLAGS  = # -L../foo -Wl,-rpath,'$$ORIGIN/../foo' -shared
+LDFLAGS  = # -L../foo -shared
 LDLIBS   = # -lfoo
 #CC      = $(CXX) # link with CXX for .cpp
 
