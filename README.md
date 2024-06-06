@@ -1,9 +1,9 @@
 ```
 
-# link library with -shared and executable with -pie
-CFLAGS   = -fPIC -g # -O3 # CXXFLAGS for .cpp
+# library -fPIC -shared and executable -fPIE -pie
+CFLAGS   = -g -fPIE # -fPIC -O3 # CXXFLAGS for .cpp
 CPPFLAGS = -MMD -MP # -I../foo -DNDEBUG
-LDFLAGS  = -fsanitize=address # -L../foo -shared -pie
+LDFLAGS  = -fsanitize=address -pie # -shared -L../foo
 LDLIBS   = # -lfoo
 #CC      = $(CXX) # link with CXX for .cpp
 
