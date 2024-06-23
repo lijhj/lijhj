@@ -1,9 +1,8 @@
 ```
-
-# executable -fPIE -pie and library -fPIC -shared
-CFLAGS   = -g -fPIE # -fPIC -O3 # CXXFLAGS for .cpp
+# build dynamic library with -fPIC -shared
+CFLAGS   = -g # -O3 -fPIC # CXXFLAGS for .cpp
 CPPFLAGS = -MMD -MP # -I../foo -DNDEBUG
-LDFLAGS  = -pie # -shared -L../foo
+LDFLAGS  = # -L../foo -shared
 LDLIBS   = # -lfoo
 #CC      = $(CXX) # link with CXX for .cpp
 
