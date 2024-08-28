@@ -1,4 +1,3 @@
-### [Minimal Makefile](https://github.com/lijh8/Minimal-Makefile)
 
 ```
 # build dynamic library with -fPIC -shared
@@ -13,21 +12,6 @@ main : $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
 -include *.d
 clean : ; -rm -fr *.o *.d main
 .PHONY : clean
-```
-
----
-
-### [Imitating tuple in Golang](https://github.com/lijh8/go2work/blob/main/tuple2/tuple2.go)
-
-```
-import tuple2
-
-func main() {
-	a := []any{"abc", 123, 3.14}
-	b := []any{"abc", 123, 3.14}
-	c, ok := tuple2.Compare(a, b)
-	fmt.Println(c, ok)
-}
 ```
 
 
