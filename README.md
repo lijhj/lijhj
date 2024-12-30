@@ -9,16 +9,16 @@ LDLIBS   = # -lfoo
 #CC      = $(CXX) # link with CXX for .cpp
 
 # target name is basename of one of the source files
-main : $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
+main: $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
 -include *.d
-clean : ; $(RM) *.o *.d main
-.PHONY : clean
+clean: ; $(RM) *.o *.d main
+.PHONY: clean
 
 # fully static link archive .a with -static
-# ARFLAGS = rvU
-(%) : % ;
-%.a : ; $(AR) $(ARFLAGS) $@ $?
-libfoo.a : $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
+ARFLAGS = rvU
+(%): % ;
+%.a: ; $(AR) $(ARFLAGS) $@ $?
+libfoo.a: libfoo.a($(patsubst %.c,%.o,$(wildcard *.c))) # .cpp
 
 ```
 
