@@ -14,6 +14,12 @@ main: $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
 clean: ; $(RM) *.o *.d main
 .PHONY: clean
 
+# archive static library target suffix is `.a`
+# ARFLAGS = rvU
+(%) : % ;
+%.a : ; $(AR) $(ARFLAGS) $@ $?
+libfoo.a: $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
+
 ```
 
 
