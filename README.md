@@ -18,7 +18,7 @@ clean : ; $(RM) *.o *.d main
 # ARFLAGS = rvU
 (%) : % ;
 %.a : ; $(AR) $(ARFLAGS) $@ $?
-libfoo.a: $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
+libfoo.a : $(patsubst %.c,%.o,$(wildcard *.c)) # .cpp
 
 ```
 
